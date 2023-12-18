@@ -39,7 +39,7 @@ const workingHoursMiddleware = (req, res, next) => {
 };
 
 app.use(express.static("public")); // Serve static files from the public directory
-// app.use(workingHoursMiddleware); // Apply the custom middleware to check working hours
+app.use(workingHoursMiddleware); // Apply the custom middleware to check working hours
 
 // Set up template engine
 app.set("view engine", "ejs");
