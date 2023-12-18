@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Agro Sales - Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Our Services</a></li>
+          <li><a href="/contact">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-info">
+        <h1>Contact Information</h1>
+        <p>
+          Feel free to reach out to us using the contact details provided below.
+        </p>
+        <address>
+          <p>Email: info@agrosales.com</p>
+          <p>Phone: +2348168777841</p>
+          <p>
+            Address: 75 Aminu Kano Crescent, Wuse 2, Abuja 904101, Federal
+            Capital Territory
+          </p>
+        </address>
+      </section>
+
+      <section class="contact-form">
+        <h2>Contact Form</h2>
+        <form action="/submit-contact" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
